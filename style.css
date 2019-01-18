@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+body,html{
+    background: linear-gradient(rgb(192, 109, 1), rgb(27, 0, 182));
+    height: 100%;
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+   
+}
+.flex-container{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100%;
+     
+}
+.side-text-input p{
+    background: white;
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 2rem; 
+    margin-right: -4px;
+    
+}
+form{
+    display: inline-block;
+}
+.main-container{
+    background: rgb(199, 199, 199);
+    margin: 2rem;
+    border: 4px solid black;
+    border-radius: 16px; 
+    width: 60%;
+    text-align: center;
+}
+.main-input{
+    padding: 0.5rem;
+    font-size:2rem; 
+    border: none;
+    outline: 0;
+}
+.main-results{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 0;
+    border-width: 1px 1px 0 0; 
+    border-style:  solid ;
+    border-color: grey;
+    width: 50%;
+    
+}
+.main-results-percent{
+    border-width: 1px 0 0 0; 
+    border-style:  solid ;
+    border-color: grey;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    width: 50%;
+}
+.flex-2{
+    display: flex;
+}
+@media(max-width: 815px){
+    .flex-2{
+        flex-direction: column;
+    }
+    .main-results-percent{
+        width: 100%;
+        border-width: 1px 0 0 0; 
+    }
+    .main-results{
+        width: 100%;
+        border-width: 1px 0 0 0; 
+    }
+    .side-text-input p{
+        font-size: 1rem;
+    }
+   .main-input{
+       font-size: 1rem;
+   }
+}
